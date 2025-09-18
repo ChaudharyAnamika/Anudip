@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Taj Mahal — Agra, Uttar Pradesh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      line-height: 1.5;
+      color: #1f2937;
+      background: linear-gradient(180deg, #f6f8fb 0%, #ffffff 100%);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 1.25rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 980px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(16,24,40,0.08);
+      /* REMOVED overflow: hidden so page can scroll when content is taller than viewport */
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    header {
+      padding: 1.5rem 1.25rem;
+      background: linear-gradient(90deg, #0f3460, #16213e);
+      color: #fff;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    header h1 { margin: 0 0 .25rem 0; font-size: 1.6rem; letter-spacing: -0.02em; }
+    header p { margin: 0; opacity: 0.95; font-size: .95rem; }
+
+    main {
+      padding: 1.25rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+
+    figure {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      max-width: 920px;
+      border-radius: 8px;
+      display: block;
+      box-shadow: 0 8px 20px rgba(16,24,40,0.06);
+    }
+
+    figcaption { margin-top: .5rem; font-size: .9rem; color: #545f66; text-align: center; }
+
+    section {
+      padding: 1rem;
+      border-radius: 8px;
+      background: linear-gradient(180deg, rgba(247,249,251,0.9), rgba(255,255,255,0.85));
+      border: 1px solid rgba(15,23,42,0.04);
+    }
+
+    section h2 { margin: 0 0 .5rem 0; font-size: 1.05rem; color: #0f2a4a; }
+    p { margin: 0 0 .6rem 0; color: #2b3740; }
+    ul, ol { margin: .4rem 0 0 1.15rem; padding: 0; color: #2b3740; }
+    li { margin: .35rem 0; }
+
+    footer {
+      padding: 1rem 1.25rem;
+      background: linear-gradient(90deg, #0f3460, #16213e);
+      color: #fff;
+      text-align: center;
+      font-size: .95rem;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+
+    a { color: #0f3460; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    @media (min-width: 880px) {
+      main {
+        grid-template-columns: 1fr 320px;
+        gap: 1rem;
+      }
+      figure { grid-column: 1 / -1; }
+      .wide { grid-column: 1 / 2; }
+      .side { grid-column: 2 / 3; }
+      .side section { margin-bottom: .75rem; padding: .9rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>The Taj Mahal</h1>
+      <p><strong>Location:</strong> Agra, Uttar Pradesh, India</p>
+    </header>
+
+    <main>
+      <figure class="wide">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" alt="The Taj Mahal at sunrise" width="600" />
+        <figcaption>Taj Mahal — Agra (photo credit: Wikimedia Commons)</figcaption>
+      </figure>
+
+      <section class="wide">
+        <h2>Overview</h2>
+        <p>
+          The Taj Mahal is a 17th-century white marble mausoleum built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal.
+          It is one of the most famous monuments in the world and a UNESCO World Heritage Site.
+        </p>
+      </section>
+
+      <section class="wide">
+        <h2>History</h2>
+        <p>
+          Construction began around 1632 and was substantially complete by 1648, with finishing touches continuing for several years.
+        </p>
+      </section>
+
+      <section class="side">
+        <h2>Visitor Information</h2>
+        <ul>
+          <li><strong>Best time to visit:</strong> October to March.</li>
+          <li><strong>Entry:</strong> Paid entry for foreign and domestic visitors.</li>
+          <li><strong>Timings:</strong> Typically opens at sunrise and closes at sunset; closed on Fridays for general visitors.</li>
+          <li><strong>Tip:</strong> Carry valid ID for ticket purchase.</li>
+        </ul>
+      </section>
+
+      <section class="wide">
+        <h2>What to See</h2>
+        <ul>
+          <li><strong>Main Dome & Inner Chamber:</strong> Marble inlay work and calligraphy panels.</li>
+          <li><strong>Gardens:</strong> Symmetrical charbagh garden with reflecting pools.</li>
+          <li><strong>Yamuna Riverside:</strong> Lovely views of the Taj.</li>
+        </ul>
+      </section>
+
+      <section class="side">
+        <h2>How to Reach</h2>
+        <ul>
+          <li><strong>By Air:</strong> Agra (Kheria) airport — limited connections; Delhi is the major nearby airport.</li>
+          <li><strong>By Train:</strong> Frequent trains connect Agra to major cities.</li>
+          <li><strong>By Road:</strong> Well-connected by national highways.</li>
+        </ul>
+      </section>
+
+      <section class="wide">
+        <h2>Nearby Attractions</h2>
+        <ol>
+          <li>Agra Fort — UNESCO World Heritage Site.</li>
+          <li>Itmad-ud-Daulah (Baby Taj).</li>
+          <li>Mehtab Bagh — great Taj views.</li>
+        </ol>
+      </section>
+
+      <section class="wide">
+        <h2>Practical Tips</h2>
+        <ul>
+          <li>Wear comfortable shoes.</li>
+          <li>Carry water and sun protection.</li>
+          <li>Aim for sunrise/late afternoon for photos.</li>
+        </ul>
+      </section>
+
+      <section class="wide">
+        <h2>Learn More</h2>
+        <p>
+          For official hours and ticketing, check the Archaeological Survey of India:
+          <a href="https://asiatic.indianheritage.gov.in/" target="_blank" rel="noopener">asiatic.indianheritage.gov.in</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Designed in pure HTML + CSS — a simple, information-first single-page about a tourist place in Uttar Pradesh.</p>
+    </footer>
+  </div>
+</body>
+</html>
